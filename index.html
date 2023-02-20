@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Final Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/94f39b8e9d.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Heading.png" class="logo">
+                
+                <ul id="sidemenu">
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hey, I'm <span>Avinash</span></h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user1.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    Hola Fam! If you spot a novice at one end of the table in CCD in NITT trying to get people together to play UNO or sipping a cup of coffee
+                    (cold mosttly) scouring through travel pages on Instagram or fixated into one of Marc Weins' Peshawari food vlogs, yep that would me!
+                    Always love to keep things simple (human relations too for that matter), and always willing to learn and deep dive into 
+                    anything I haven't explored yet! That's what piques my interest! <br>   
+                    I am junior majoring in Instrumentation and Control Engineering from the National Institute of Technology, Tiruchirppalli,India
+                    Wanna talk cricket or anything for that matter?<span> Ping me!</span> 
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('skills')">Skills</p>
+
+                    
+                </div>
+                <div class="tab-contents active-tab" id="education">
+                    <ul>
+                        <li><span>2020-2024 : 8.49 CGPA</span><br>B.Tech in Instrumentation and Control Engineering. <br> National Institute of Technology, Tiruchirppalli, India </li>
+                        <li><span>2019-2020 : 96%</span><br>High School - Devi Academy Senior Secondary School, Chennai </li>
+                        <li><span>2017-2018 : 97.2%</span><br>Class 10 - PSBB Senior Secondary School, Chennai</li>
+                    </ul>
+                </div>
+                <div class="tab-contents " id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>Building Web Applications using HTML, CSS, JS and active APIs.</li>
+                        <li><span>Competitive Programming</span><br>Participated in multiple online tests and coding rounds to solve application based
+                        problems in a timed environment.</li>
+                        <li><span>Familiarity with Data Structures and Algorithms</span><br>In depth study in DSA in C++ language.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Manager and Head of the Branding sub team, Media Relations Team, Festember<br>May 2021 - Dec 2022</span><br>Bring in the media presence for NITT’s annual cultural festival – Festember, by contacting and 
+                            connecting with managers from various prominent media houses. Was part of the team in 2021 that 
+                            generated 35 Lakhs INR in the form of deliverables and other kinds for that year’s edition.</li>
+                        <li><span> Speakers’ Liaison, TEDxNITTrichy<br> Feb 2021 - Dec 2022 </span><br>Identify talk ideas relatable for the local community and curate TEDx Talks for speakers. Curated the 
+                            TEDxNITT Talk by Dr. Bitasta Das, Professor at IISC, Bangalore in the 2022 edition. </li>
+                        <li><span>Electrical Electronics and Control Researcher, EVER NITT <br> Nov 2021 - Dec 2022</span><br>Working as researcher at the Electric vehicles and Energy Resources club of NITT and we research 
+                            about control systems and energy resources needed to power an E Vehicle. Currently involved in the 
+                            project to design an e Bike.</li>
+                    </ul>
+                </div>
+ 
+
+            </div>
+
+        </div>
+    </div>
+<!------------------------- services-->
+<div class="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>I have indulged into the world of web-dev by doing projects related to the same. I am looking to upskill myself
+                    my learning more.
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>Technical Content Writing</h2>
+                <p>Writing has always been my passion. When it comes to creating enaging content related to fileds 
+                    I am most interested in, I always give my best. </p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Dev</h2>
+                <p>I am in the initial stages of learning how to build mobile applicatiosn and in the early learning stages. </p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- portfolio ---------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work1.png">
+                <div class="layer">
+                    <h3>Research Intern, IIT Hyderabad</h3>
+                    <p>Worked on the “Digital Twin of SDN” project – the concept of building a platform to represent the physical SDN network and entities on a virtual plane (digital representation) and running applications that we developed to run on this platform for performing various things and getting contexts. I have assisted the team and understood different concepts of Software Defined Networking through this.
+                        </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/logo2.jpg">
+                <div class="layer">
+                    <h3>Research Intern, IIT Indore</h3>
+                    <p>In-depth reading and understanding of research papers about SDN in IoT, Open flow systems and their working and Buffer Size evaluation, and Dynamic Data flow management and network slicing. 
+                        </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <!-- <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Media App</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div> -->
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!-- contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i>avinashk.nitt@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+91 9176 317424</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/_iamavinashk_/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/avinash.k.54584982"><i class="fa-brands fa-facebook"></i></i></a>
+                    <a href="https://www.linkedin.com/in/avinash-k-18979b205/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://twitter.com/Avinash20311128"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <a href="images/Resume_Avinash.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-solid fa-copyright"></i> Avinash. Made with <i class="fa-solid fa-heart"></i> by Avinash</p>
+    </div>
+</div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwcaHX5FtkEu1mv0nZGulRcwdOeGb2xs6yiXWFfVc_Ticv07hqJaQtK7UuN3VjybG4n/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+    </script>
+
+    </body>
+</html>
